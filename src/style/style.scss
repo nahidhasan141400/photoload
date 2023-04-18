@@ -75,16 +75,22 @@ header {
       justify-content: space-between;
       .logo {
         font-size: 30px;
-        color: #fff;
+        color: #a0a0a0;
+        @media (max-width: 550px) {
+          font-size: 20px;
+        }
       }
       ol {
         list-style: none;
         display: flex;
         li {
           margin-left: 20px;
+          @media (max-width: 550px) {
+            font-size: 16px;
+          }
           a {
             text-decoration: none;
-            color: #fff;
+            color: #a0a0a0;
           }
         }
       }
@@ -98,6 +104,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h1 {
       font-size: 60px;
       font-family: "Sacramento", cursive;
@@ -114,12 +121,19 @@ header {
       transform: rotate(-10deg);
       top: 40px;
       text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.089);
+      @media (max-width: 550px) {
+        font-size: 30px;
+        top: 20px;
+      }
     }
     h2 {
       font-size: 80px;
       background: linear-gradient(to right, #ad5389, #3c1053);
       color: transparent;
       background-clip: text;
+      @media (max-width: 550px) {
+        font-size: 30px;
+      }
     }
   }
   //   .img {
@@ -258,8 +272,18 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 5px;
     grid-auto-flow: dense;
+    padding: 0 10px;
+    @media (max-width: 460px) {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
     .card {
       width: 100%;
+      min-height: 200px;
+      background: linear-gradient(135deg, #c4c3d780 50%, transparent 0),
+        linear-gradient(-135deg, #c4c3d780 50%, transparent 0);
+      background-size: 3em 3em;
+      background-color: #ffffff;
+      opacity: 1;
       height: 100%;
       position: relative;
       margin: 2px;
@@ -287,4 +311,18 @@ header {
       grid-column: auto / span 2;
     }
   }
+}
+
+.lazyload {
+  color: gray;
+  opacity: 0;
+  -webkit-filter: blur(4px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.lazyload.lazyloaded {
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
 }
