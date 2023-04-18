@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// font-family: 'Montserrat', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+// font-family: 'Sacramento', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background: radial-gradient(
+      circle at top left,
+      transparent 9%,
+      #f1f1f1 10%,
+      #f1f1f1 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      transparent 9%,
+      #f1f1f1 10%,
+      #f1f1f1 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at top right,
+      transparent 9%,
+      #f1f1f1 10%,
+      #f1f1f1 15%,
+      transparent 16%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      transparent 9%,
+      #f1f1f1 10%,
+      #f1f1f1 15%,
+      transparent 16%
+    ),
+    radial-gradient(circle, transparent 25%, #f4f4f4 26%),
+    linear-gradient(
+      45deg,
+      transparent 46%,
+      #f1f1f1 47%,
+      #f1f1f1 52%,
+      transparent 53%
+    ),
+    linear-gradient(
+      135deg,
+      transparent 46%,
+      #f1f1f1 47%,
+      #f1f1f1 52%,
+      transparent 53%
+    );
+  background-size: 4em 4em;
+  background-color: #f4f4f4;
+  opacity: 1;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  nav {
+    width: 100%;
+    position: relative;
+    padding: 20px 10px;
+    .con {
+      width: 100%;
+      max-width: 1400px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      .logo {
+        font-size: 30px;
+        color: #fff;
+      }
+      ol {
+        list-style: none;
+        display: flex;
+        li {
+          margin-left: 20px;
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .Name {
+    width: 100%;
+    height: 300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 60px;
+      font-family: "Sacramento", cursive;
+      background-image: radial-gradient(
+        circle farthest-corner at 10% 20%,
+        rgba(176, 229, 208, 1) 42%,
+        rgb(92, 201, 238) 93.6%
+      );
+      color: transparent;
+      font-weight: 500;
+      background-clip: text;
+      padding: 10px;
+      position: relative;
+      transform: rotate(-10deg);
+      top: 40px;
+      text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.089);
+    }
+    h2 {
+      font-size: 80px;
+      background: linear-gradient(to right, #ad5389, #3c1053);
+      color: transparent;
+      background-clip: text;
+    }
+  }
+  //   .img {
+  //     width: 100%;
+  //     height: 100%;
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     overflow: hidden;
+  //     .img1 {
+  //       width: 400px;
+  //       position: absolute;
+  //       top: 40%;
+  //       left: 70px;
+  //       transform: rotate(30deg);
+  //       box-shadow: 5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //     .img2 {
+  //       width: 170px;
+  //       position: absolute;
+  //       bottom: 40%;
+  //       right: 70px;
+  //       transform: rotate(-30deg);
+  //       box-shadow: -5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //     .img3 {
+  //       width: 300px;
+  //       position: absolute;
+  //       bottom: 20px;
+  //       right: 240px;
+  //       transform: rotate(10deg);
+  //       box-shadow: 5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //     .img4 {
+  //       width: 200px;
+  //       position: absolute;
+  //       bottom: 20px;
+  //       left: 240px;
+  //       transform: rotate(10deg);
+  //       box-shadow: 5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //     .img5 {
+  //       width: 200px;
+  //       position: absolute;
+  //       right: 20px;
+  //       bottom: 20px;
+  //       transform: rotate(-10deg);
+  //       box-shadow: -5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //     .img7 {
+  //       width: 200px;
+  //       position: absolute;
+  //       left: 20px;
+  //       bottom: 20px;
+  //       transform: rotate(-5deg);
+  //       box-shadow: 5px 5px 7px rgb(48, 48, 48);
+  //       cursor: pointer;
+  //       transition: all 0.4s linear;
+  //       &:hover {
+  //         transform: scale(120%);
+  //         z-index: 100;
+  //       }
+  //     }
+  //   }
+  .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    .con {
+      .softbox1 {
+        position: absolute;
+        left: -100px;
+        top: 200px;
+        transform: rotateY(180deg);
+      }
+      .softbox2 {
+        position: absolute;
+        right: -100px;
+        top: 200px;
+      }
+    }
+  }
+}
+
+.galry {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  top: -550px;
+  .titel {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    p {
+      color: #fff;
+    }
+  }
+  .cont {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      margin: 2px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        transition: all 0.5s linear;
+        &:hover {
+          transform: scale(120%);
+          z-index: 100;
+          //   object-fit: contain;
+        }
+      }
+    }
+    .w {
+      grid-column: auto / span 2;
+    }
+    .h {
+      grid-row: auto / span 2;
+    }
+    .b {
+      grid-row: auto / span 2;
+      grid-column: auto / span 2;
+    }
+  }
+}
